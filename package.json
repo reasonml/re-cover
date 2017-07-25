@@ -1,0 +1,12 @@
+{
+  "name": "conversion-coverage",
+  "version": "1.0.0",
+  "description": "This small script generates a visualization of your codebase's conversion from JavaScript to Reason.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

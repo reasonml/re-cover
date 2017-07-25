@@ -1,0 +1,93 @@
+digraph {
+rankdir=LR bgcolor="#F6F4F4"
+edge [color="#8F8F8F"]
+node [style=filled color=pink fontcolor=white]
+subgraph cluster01 {
+label="dependencies"
+Button [color="#DD4B39"]
+ButtonExample [color="#DD4B39"]
+CascadingUpdatesExample [color="#DD4B39"]
+ChildFloatNoStateControl [color="#DD4B39"]
+ChildFloatNoStateNoControl [color="#DD4B39"]
+ChildFloatStateControl [color="#DD4B39"]
+ChildFloatStateNoControl [color="#DD4B39"]
+ChildIntNoStateControl [color="#DD4B39"]
+ChildIntNoStateNoControl [color="#DD4B39"]
+ChildIntStateControl [color="#DD4B39"]
+ChildIntStateNoControl [color="#DD4B39"]
+ChildRouting [color="#DD4B39"]
+ComponentGallery [color="#DD4B39"]
+GalleryContainer [color="#DD4B39"]
+GalleryItem [color="#DD4B39"]
+LifecycleLogger [color="#DD4B39"]
+MultipleStateUpdatesPerEvent [color="#DD4B39"]
+MultipleStateUpdatesPerEventQueued [color="#DD4B39"]
+MyBannerRe [color="#DD4B39"]
+PageReason [color="#DD4B39"]
+ParentNoStateControl [color="#DD4B39"]
+ParentNoStateNoControl [color="#DD4B39"]
+ParentStateControl [color="#DD4B39"]
+ParentStateNoControl [color="#DD4B39"]
+ReceiveProps [color="#DD4B39"]
+ReceivePropsExample [color="#DD4B39"]
+ReducerButton [color="#DD4B39"]
+ReducerButtonExample [color="#DD4B39"]
+ReducerTaxonomyExample [color="#DD4B39"]
+RefHaver [color="#DD4B39"]
+SideEffecter [color="#DD4B39"]
+SideEffecterCorrect [color="#DD4B39"]
+SideEffecterExample [color="#DD4B39"]
+SilentUpdater [color="#DD4B39"]
+SimpleRoot [color="#DD4B39"]
+StatefulButton [color="#DD4B39"]
+StatefulButtonExample [color="#DD4B39"]
+MyBannerRe [color="#8F8F8F"]
+PageReason [color=blue]
+ButtonExample -> Button
+CascadingUpdatesExample -> StatefulButton
+ComponentGallery -> ButtonExample
+ComponentGallery -> CascadingUpdatesExample
+ComponentGallery -> ChildRouting
+ComponentGallery -> GalleryContainer
+ComponentGallery -> GalleryItem
+ComponentGallery -> LifecycleLogger
+ComponentGallery -> MultipleStateUpdatesPerEvent
+ComponentGallery -> MultipleStateUpdatesPerEventQueued
+ComponentGallery -> ReceivePropsExample
+ComponentGallery -> ReducerButtonExample
+ComponentGallery -> ReducerTaxonomyExample
+ComponentGallery -> RefHaver
+ComponentGallery -> SideEffecterExample
+ComponentGallery -> SilentUpdater
+ComponentGallery -> StatefulButtonExample
+PageReason -> MyBannerRe
+ParentNoStateControl -> ChildFloatStateNoControl
+ParentNoStateControl -> ChildIntStateNoControl
+ParentNoStateNoControl -> ChildFloatStateControl
+ParentNoStateNoControl -> ChildIntStateControl
+ParentStateControl -> ChildFloatNoStateNoControl
+ParentStateControl -> ChildIntNoStateNoControl
+ParentStateNoControl -> ChildFloatNoStateControl
+ParentStateNoControl -> ChildIntNoStateControl
+ReceiveProps -> Button
+ReceivePropsExample -> ReceiveProps
+ReducerButtonExample -> ReducerButton
+ReducerTaxonomyExample -> ParentNoStateControl
+ReducerTaxonomyExample -> ParentNoStateNoControl
+ReducerTaxonomyExample -> ParentStateControl
+ReducerTaxonomyExample -> ParentStateNoControl
+SideEffecter -> Button
+SideEffecterCorrect -> Button
+SideEffecterExample -> SideEffecter
+SilentUpdater -> Button
+SimpleRoot -> Page
+StatefulButtonExample -> StatefulButton
+}
+subgraph cluster02 {
+label="colors legend"
+LegendReadonOrange [color="#DD4B39", label="Component not called from JS"]
+LegendBlue [color=blue, label="Component callable from JS"]
+LegendReasonGrey [color="#8F8F8F", label="Component wrapping JS"]
+LegendPink [label="JS Component used by Reason"]
+}
+}

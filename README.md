@@ -11,3 +11,6 @@ Clone this directory and invoke the `re-cover` script at the root of the project
 ## Prerequisite
 **Note**: doesn't work on Windows yet. Contribution welcome!
 You need to have GraphViz installed for the `dot` utility, and the usual `sed, find, grep`.
+
+## Example
+![Example](/example/comp.png)

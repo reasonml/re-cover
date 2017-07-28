@@ -73,7 +73,7 @@ echo "subgraph cluster02 {" >> comp.dot
 echo "label=\"colors legend\"" >> comp.dot
 echo "LegendReadonOrange [color=\"#DD4B39\", label=\"Pure Reason!\"]" >> comp.dot
 echo "LegendBlue [color=blue, label=\"Reason, callable from JS\"]" >> comp.dot
-echo "LegendReasonGrey [color=\"#8F8F8F\", label=\"Reason wrapping a JS component\"]" >> comp.dot
+echo "LegendReasonGrey [color=\"#8F8F8F\", label=\"Reason wrapping JS\"]" >> comp.dot
 echo "LegendPink [label=\"JS component\"]" >> comp.dot
 echo "}" >> comp.dot
 echo "}" >> comp.dot
